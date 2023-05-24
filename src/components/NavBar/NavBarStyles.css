@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 * {
 	padding: 0;
@@ -23,6 +23,8 @@ header, h3 {
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
+    font-family: Courgette;
+    font-size: x-large;
 }
 
 nav a {
