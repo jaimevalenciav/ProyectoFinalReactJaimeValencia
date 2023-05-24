@@ -1,26 +1,39 @@
+import { useRef } from "react"
+import {FaBars, FaTimes} from "react-icons/fa"
+import './NavBarStyles.css'
 import CartWidget from "../CartWidget/CartWidget"
 import logo from './assets/logo.png'
-import './NavBarStyles.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.css';
 
 const NavBar = () => {
+    const navRef = useRef()
+
+    const showNabvar = () => {
+        navRef.current.classList.toggle("responsive_nav")
+    }
+    
     return (
-        <nav>
+        <header>
             <div >
                 <img src={logo} className="logo" id="logo" alt="logo" />
                 <h3>El que al mundo Vino</h3>
             </div>
-            <div>
-                <ul id="navbar">
-                    <li><a href="">Tintos</a></li>
-                    <li><a href="">Blancos</a></li>
-                    <li><a href="">Rosados</a></li>
-                    <li><a href="">Espumantes</a></li>
-                    <li><a href="">Todos</a></li>
-                </ul>
-            </div>
-            <CartWidget />
-        </nav>
+            <nav ref={navRef}>            
+                <a href="/#">Tintos</a>
+                <a href="/#">Blancos</a>
+                <a href="/#">Rosados</a>
+                <a href="/#">Espumantes</a>
+                <a href="/#">Todos</a>
+                <buttons className="nav-btn nav-close-btn" onClick={showNabvar}>
+                    <FaTimes />
+                </buttons>
+                <CartWidget />
+            </nav>
+            <buttons className="nav-btn" onClick={showNabvar}>
+                <FaBars />
+            </buttons>
+            
+        </header>
     )
 }
 
