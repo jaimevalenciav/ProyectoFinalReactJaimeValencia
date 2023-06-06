@@ -27,8 +27,9 @@ const NavBar = () => {
                 <buttons className="nav-btn nav-close-btn" onClick={showNabvar}>
                     <FaTimes />
                 </buttons>
-                <CartWidget />
+                
             </nav>
+            <CartWidget />
             <buttons className="nav-btn" onClick={showNabvar}>
                 <FaBars />
             </buttons>
