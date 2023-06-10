@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { getProducts } from "../../asyncElementos"
 import ItemList from "../ItemList/ItemList"
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
     const [products, setProducts] = useState([])
     
     useEffect(() => {

@@ -1,10 +1,19 @@
 #btn-agregar{
-    width: 10rem;
+    width: 6rem;
+    margin-left: 1rem;
 }
 
 .botones {
-    margin-right: 10px;
-    margin-left: 10px;
-    width: 1rem;
-    
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width: 0.5rem;
+        
+}
+
+span{
+    font-size: small;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }

@@ -2,7 +2,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import {Card, Col, Button} from 'react-bootstrap'
 import './Item.css'
 
+
 const Item = ({id, saldo, precio, color, title, imagen}) => {
+    
     return (
 
             
@@ -15,9 +17,9 @@ const Item = ({id, saldo, precio, color, title, imagen}) => {
                                 Precio: ${precio}
                             </Card.Text>
                             <Card.Text>
-                                Stock: {saldo} 356un.
+                                Stock: {saldo} un.
                             </Card.Text>
-                            <Button variant="primary">Ver Detalle</Button>
+                            <Button className ="btnDetalle" variant="primary">Ver Detalle</Button>
                         </Card.Body>
                     </Card>
                 </Col>            

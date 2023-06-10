@@ -20,13 +20,12 @@ const Counter = ({inicial, stock, onAdd}) => {
 
         return (            
             <div className="card">
-                <div className="card-body">
-                    <h5 className="">Counter</h5>
+                <div className="card-body">                    
                         <button className='btn btn-warning' id="botones" onClick={decrementar}>-</button> 
-                        <h6> {cantidad} </h6>
-                        <button className='btn btn-danger' id="botones" onClick={incrementar}>+</button>
-                        <p></p>                   
-                <button className='btn btn-success' id="btn-agregar" onClick={() => onAdd(cantidad)} disable={!stock}>Agregar</button>
+                        <span> {cantidad} </span>
+                        <button className='btn btn-warning' id="botones" onClick={incrementar}>+</button>
+                                         
+                <button className='btn btn-warning' id="btn-agregar" onClick={() => onAdd(cantidad)} disable={!stock}>Agregar</button>
                 </div>
             </div>
         )
