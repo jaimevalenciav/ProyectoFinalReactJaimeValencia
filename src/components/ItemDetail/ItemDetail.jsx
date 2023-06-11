@@ -5,28 +5,31 @@ import Counter from '../../components/Counter/Counter.jsx';
 
 const ItemDetail = ({id, precio, saldo, color, title, imagen, descripcion}) => {
     return (
-        <article className="CardItem">
-            <header className = "Header">
-                <h2 className = "ItemHeader">{title}</h2>
-            </header>
+        <div className="CardItem">
+        <article >            
+            <h2 className = "ItemHeader">{title}</h2>            
             <picture>
                 <img src={imagen} alt={title} className="ItemImg" />
             </picture>
+                <p className="Info">
+                    Id: {id}
+                </p> 
             <section>
                 <p className="Info">
                     Color: {color}
                 </p>
                 <p className="Info">
                     Descripción: {descripcion}
-                </p>  
+                </p>                  
                 <p className="Info">
                     Precio: ${precio}
                 </p>                
             </section>
             <footer className='ItemFooter'>
-            <Counter inicial={1} stock={saldo} onAdd={(cantidad) => console.log('cantidad agregada ', cantidad)}/>
+                <Counter inicial={1} stock={saldo} onAdd={(cantidad) => console.log('cantidad agregada ', cantidad)}/>
             </footer>
         </article>
+        </div>
     )
 }
 
