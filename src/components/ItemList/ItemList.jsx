@@ -7,18 +7,12 @@ import './ItemList.css'
 const ItemList = ({products}) => {
     return (
         <Container>
-            <Row xs={1} md={4}>
-           
+            <Row xs={1} md={4}>           
                 {products.map(product => 
                     <Item key={product.id} {...product} />
-
-                )}           
-            
+                )}            
             </Row>
-      </Container> 
-
-        
-        
+      </Container>         
     )
 }
 

@@ -156,9 +156,9 @@ const products = [
 
   export const getProducts = () =>{
     return new Promise((resolve) => {
-        setTimeout(() => {
-                    resolve(products);
-                }, 500);
+      setTimeout(() => {
+        resolve(products);
+      }, 500);
     })
   }
 
@@ -169,3 +169,13 @@ const products = [
       },500)
     })
   }
+
+  export const getProductsByCategory = (color) => {
+    return new Promise ((resolve) => {
+      setTimeout(() => {
+        resolve(products.filter(prod => prod.color === color));
+      },500)
+    })
+  }
+
+

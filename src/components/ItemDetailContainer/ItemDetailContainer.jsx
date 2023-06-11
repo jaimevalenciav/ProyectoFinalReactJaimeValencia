@@ -3,22 +3,24 @@ import './ItemDetailContainer.css'
 import {useState, useEffect} from 'react'
 import { getProductById } from '../../asyncElementos.js'
 import ItemDetail from '../ItemDetail/ItemDetail.jsx'
+import { useParams } from 'react-router-dom'
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null)
+    const { itemId } = useParams()
 
     useEffect(() => {
-        getProductById(2)
+        getProductById(itemId)
         .then(response => {
-            setProduct(response)
+            setProduct(response)            
         })
         .catch(error => {
             console.error(error)
         })
-    },[])
+    },[itemId])
 
     return(
-        <div className='ItemDetailContainer'>
+        <div className='ItemDetailContainer'>            
             <ItemDetail {...product} />
         </div>
     )

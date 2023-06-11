@@ -19,10 +19,10 @@ const NavBar = () => {
                 <h3>El que al mundo Vino</h3>
             </div>
             <nav ref={navRef}>            
-                <a href="/#">Tintos</a>
-                <a href="/#">Blancos</a>
-                <a href="/#">Rosados</a>
-                <a href="/#">Espumantes</a>
+                <a href="/color/tinto">Tintos</a>
+                <a href="/color/blanco">Blancos</a>
+                <a href="/color/rosado">Rosados</a>
+                <a href="/color/espumante">Espumantes</a>
                 <a href="/#">Todos</a>
                 <buttons className="nav-btn nav-close-btn" onClick={showNabvar}>
                     <FaTimes />

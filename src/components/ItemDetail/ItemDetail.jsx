@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './ItemDetail.css'
+
 import Counter from '../../components/Counter/Counter.jsx';
 
 const ItemDetail = ({id, precio, saldo, color, title, imagen, descripcion}) => {
