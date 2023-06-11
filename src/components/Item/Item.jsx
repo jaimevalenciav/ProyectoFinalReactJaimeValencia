@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import {Card, Col} from 'react-bootstrap'
 import './Item.css'
-import { Link } from "react-router-dom";
+import { Link , useNavigate} from "react-router-dom";
 const Item = ({id, saldo, precio, color, title, imagen}) => {
-    
+    const navigate = useNavigate
     return (            
         <Col className ="p-2">
             <Card className="card-body">
@@ -19,7 +19,9 @@ const Item = ({id, saldo, precio, color, title, imagen}) => {
                     <Card.Text>
                         Stock: {saldo} un.
                     </Card.Text>                    
-                    <Link to={`/item/${id}`} className="btn btn-primary">Ver Detalle</Link>                    
+                    <Link to={`/item/${id}`} className="btn btn-primary">Ver Detalle</Link> 
+                    
+                                       
                 </Card.Body>
             </Card>
         </Col>       

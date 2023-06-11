@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <>      
+          
       <BrowserRouter>
         <NavBar />
         <Routes>
@@ -16,7 +16,7 @@ function App() {
           <Route path='*' element={<h1>404 SITIO NO ENCONTRADO</h1>} />
         </Routes>
       </BrowserRouter>
-    </>
+    
   );
 }
 

@@ -17,12 +17,12 @@ const ItemDetailContainer = () => {
         .catch(error => {
             console.error(error)
         })
-    },[itemId])
+    },[itemId])     
     
-    return(        
+    return(          
         <div className='ItemDetailContainer'>                       
             <ItemDetail {...product} />
-        </div>
+        </div>        
     )
 }
 
