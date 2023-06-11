@@ -15,8 +15,8 @@ const NavBar = () => {
     return (
         <header>
             <div >
-                <img src={logo} className="logo" id="logo" alt="logo" />
-                <h3>El que al mundo Vino</h3>
+                <a href="/#" className="titulo"><img src={logo} className="logo" id="logo" alt="traer todo" /></a>    
+                <a href="/#" className="titulo"><h3>El que al mundo Vino</h3></a>
             </div>
             <nav ref={navRef}>            
                 <a href="/color/tinto">Tintos</a>
