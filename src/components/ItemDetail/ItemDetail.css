@@ -1,10 +1,19 @@
+.divImagen{
+    float: left;
+}
+
+.divTexto{
+    
+}
+
 .CardItem{
     margin-top: 6rem;
     margin-left: 6rem;
     margin-right: 6rem;
     margin-bottom: 3rem;
-    max-width: 50%;
+    max-width: 60%;
+    text-align: justify;
 }
-.ItemFooter{
-    max-width: 16rem;
-}
+.ItemFooter{    
+    
+} 

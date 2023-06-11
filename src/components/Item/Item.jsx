@@ -7,7 +7,10 @@ const Item = ({id, saldo, precio, color, title, imagen}) => {
     return (            
         <Col className ="p-2">
             <Card className="card-body">
-                <Card.Img variant="top" src={imagen} alt={title}/>
+                <Card.Body>
+                    <Card.Img variant="top" src={imagen} alt={title}/>
+                </Card.Body>
+                
                 <Card.Body>
                     <Card.Title className="titulo">{title}</Card.Title>
                     <Card.Text>

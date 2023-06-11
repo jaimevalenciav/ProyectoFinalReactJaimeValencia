@@ -41,7 +41,7 @@ const products = [
       "saldo": 6,
       "color": "tinto",
       "title": "Vistamar Gran Reserva Cabernet/Syrah 2022",
-      "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/VistamarGranReservaCSyrah.png?v=1661988866",
+      "imagen": "https://www.cavamorande.cl/cdn/shop/products/VistamarGranReservaCSyrah_254x300@2x.png?v=1661988866",
       "descripcion":"Rojo violeta profundo. Nariz perfumada, ciruelas, guindas licorosas, tabaco, chocolate amargo. Laurel. En la boca tiene un tanino algo rugoso, maduro, de cuerpo medio."
     },
     {      
@@ -49,9 +49,9 @@ const products = [
       "precio": 7458,
       "saldo": 14,
       "color": "tinto",
-      "title": "HAX Cabernet Sauvignon",
-      "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/hax-medalla.png?v=1665591014",
-      "descripcion":"De color violeta intenso y profundo, este vino joven y fresco, con cuerpo y bien estructurado, ya muestra la concentración en la copa. Muy limpio y con intensos aromas a frutas rojas y negras como fresas, ciruelas y moras, notas de cedro entrelazadas. En el paladar puede sentir una gran estructura, una sensación suave y aterciopelada debido a la combinación de años y la selección correcta de fruta con alto contenido de polifenoles de las mejores partes de Chile, además de un acabado fresco y jugoso proveniente de las cosechas más nuevas."
+      "title": "Morande El Padre Cabernet Franc 2020",
+      "imagen": "https://www.cavamorande.cl/cdn/shop/products/el-padre-vino-medall-2019_254x300@2x.jpg?v=1663117337",
+      "descripcion":"Cabernet Franc, el patriarca y fundador de un linaje excepcional, ha sido encarnado en su ilustre hijo Cabernet Sauvignon por siglos. La elegancia y la profundidad de su carácter único, se extiende a lo largo del tiempo, haciéndolo robusto, poderoso y acogedor."
     },
     {      
       "id": 7,
@@ -59,7 +59,7 @@ const products = [
       "saldo": 12,
       "color": "blanco",
       "title": "Vistamar Chardonnay 2019",
-      "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/vistamar-coste-campo-medalla.jpg?v=1616814043",
+      "imagen": "https://www.cavamorande.cl/cdn/shop/products/vistamar-coste-campo-medalla_254x300@2x.jpg?v=1616814043",
       "descripcion":"Amarillo verdoso. Aromas frescos de manzana roja, plátano, pomelo rosado y piña. Boca agradable, fresca, con notas a almendras y levadura."
     },
     {      
@@ -92,11 +92,11 @@ const products = [
     {      
       "id": 11,
       "saldo": 13,
-      "precio": 69990,
-      "color": "tinto",
-      "title": "House of Morandé Mezclas Tintas 2020",
-      "imagen": "https://cdn.shopify.com/s/files/1/0252/0884/8444/products/hax-medalla.png?v=1665591014",
-      "descripcion":"Rojo cereza oscuro de media profundidad. Aromas de fruta madura con un fondo de suave tostado, berries maduros, frambuesa, pimienta fresca, hojas de tabaco. Boca frutal y jugosa, de media profundidad, fresco, de tanino pulido. Elegante y complejo."
+      "precio": 6990,
+      "color": "blanco",
+      "title": "Morandé Selección de Viñedos Chardonnay",
+      "imagen": "https://www.cavamorande.cl/cdn/shop/products/estatereserve-ch_254x300@2x.png?v=1677676786",
+      "descripcion":"El fruto de este vino proviene de nuestra propiedad Belén en el sector frío de Lo Ovalle de Casablanca. Los suelos arcillosos y graníticos de fertilidad limitada y la influencia marítima del valle permiten la producción de uvas con alta expresión aromática y abundante frescura. El viñedo se coloca verticalmente, se poda y se riega por goteo. La cosecha tiene lugar a principios de abril."
     },
     {      
       "id": 12,
