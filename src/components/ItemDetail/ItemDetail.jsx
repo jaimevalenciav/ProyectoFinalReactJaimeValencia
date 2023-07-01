@@ -1,9 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import './ItemDetail.css'
-
+import './ItemDetail.css';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Counter from '../../components/Counter/Counter.jsx';
 
 const ItemDetail = ({id, precio, saldo, color, title, imagen, descripcion}) => {
+
+    const [cantAgregada, setCantidadAgregada] = useState(0)
+
+    const handleOnAdd = (quantity) => {
+        setCantidadAgregada(quantity)
+    }
+
     return (
         <div className="CardItem">            
             <article >            
@@ -28,7 +36,14 @@ const ItemDetail = ({id, precio, saldo, color, title, imagen, descripcion}) => {
                             Precio: ${precio}
                         </p>
                         <footer className='ItemFooter'>
-                            <Counter inicial={1} stock={saldo} onAdd={(cantidad) => console.log('cantidad agregada ', cantidad)}/>
+                            {
+                                cantAgregada > 0 ? (
+                                    <Link to='/cart' className='btn btn-primary'>Finalizar Compra</Link> 
+                                ) : (
+                                    <Counter inicial={1} stock={saldo} onAdd={(handleOnAdd)}/>
+                                )
+                            }
+                            
                         </footer>                
                     </section>
                     
