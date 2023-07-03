@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Item from "../Item/Item"
 import './ItemList.css'
 
-const ItemList = ({products}) => {
+const ItemList = ({ products }) => {
     return (
         <Container>
             <Row xs={1} md={4}>           

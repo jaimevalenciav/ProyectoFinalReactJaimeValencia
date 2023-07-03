@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import {Card, Col} from 'react-bootstrap'
-import './Item.css'
+
 import { Link , useNavigate} from "react-router-dom";
 const Item = ({id, saldo, precio, color, title, imagen}) => {
     const navigate = useNavigate
