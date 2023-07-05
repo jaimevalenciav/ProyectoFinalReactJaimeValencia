@@ -62,7 +62,7 @@ const Cart = () => {
               </div>
             ))}
             <div className="d-flex justify-content-center">
-              <span className="total border border-secondary">  Total: {formatoPrecios(total)}  </span>              
+              <span className="total border border-secondary">Total: {formatoPrecios(total)}</span>              
             </div>
             <div className="d-flex justify-content-center">              
               <button className="btn btn-warning" onClick={handleClearCart}>Vaciar Carrito</button>
