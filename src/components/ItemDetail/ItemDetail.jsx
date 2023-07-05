@@ -4,13 +4,14 @@ import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Counter from '../../components/Counter/Counter.jsx';
 import { CartContext } from '../../context/CartContext';
+import Swal from 'sweetalert2';
 
 
-const ItemDetail = ({id, precio, saldo, color, title, imagen, descripcion}) => {
+export const ItemDetail = ({id, precio, saldo, color, title, imagen, descripcion}) => {
 
     const [cantAgregada, setCantidadAgregada] = useState(0)
-
     const { addItem} = useContext(CartContext)
+    const [ isCartClicked, setIsCartClicked] = useState(false)
 
     const handleOnAdd = (quantity) => {
         setCantidadAgregada(quantity)
@@ -18,12 +19,13 @@ const ItemDetail = ({id, precio, saldo, color, title, imagen, descripcion}) => {
         const item = {
             id,
             title,
-            precio
+            precio,
+            saldo,
+            imagen
         }
         addItem(item, quantity)
-    }
-
-    
+        setIsCartClicked(true)        
+    }     
 
     return (
         <div className="CardItem">            
@@ -48,12 +50,20 @@ const ItemDetail = ({id, precio, saldo, color, title, imagen, descripcion}) => {
                         <p className="Info">
                             Precio: ${precio}
                         </p>
+                        <p className="Info">
+                            Stock: {saldo}un.
+                        </p>
                         <footer className='ItemFooter'>
                             {
                                 cantAgregada > 0 ? (
-                                    <Link to='/cart' className='btn btn-primary'>Finalizar Compra</Link> 
+                                    <div>
+                                        <Link to='/cart' className='btn btn-primary'>Ir a Pagar</Link>
+                                        <Link to='/' className='btn btn-warning'>Volver al Catálogo</Link>
+                                    </div>
+                                    
+                                    
                                 ) : (
-                                    <Counter inicial={1} stock={saldo} onAdd={(handleOnAdd)}/>
+                                    <Counter inicial={1} stock={saldo} onAdd={handleOnAdd}/>
                                 )
                             }                            
                         </footer>                

@@ -10,8 +10,8 @@ function App() {
   return (
           
       <BrowserRouter>
-      <CartProvider>
-        <NavBar />
+        <CartProvider>
+          <NavBar />
           <Routes>
             <Route path='/' element={<ItemListContainer />} />
             <Route path='/color/:color' element={<ItemListContainer />} />
