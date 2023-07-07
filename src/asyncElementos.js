@@ -174,7 +174,7 @@ const products = [
     return new Promise ((resolve) => {
       setTimeout(() => {
         resolve(products.filter(prod => prod.color === color));
-      },500)
+      },0)
     })
   }
 
