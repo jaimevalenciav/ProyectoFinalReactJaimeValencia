@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { CartContext } from "../../context/CartContext";
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import Swal from 'sweetalert2';
 import './Cart.css'
+
 const Cart = () => {
   const { cart, clearCart, removeItem } = useContext(CartContext);
 
@@ -20,13 +20,6 @@ const Cart = () => {
   const handleRemoveItem = (itemId) => {
     removeItem(itemId);
   };
-
-  
-
-  const handleFinalizeOrder = () => {
-    Swal.fire('Gracias por tu compra')
-  };
-
   
 
   return (
@@ -66,7 +59,7 @@ const Cart = () => {
             </div>
             <div className="d-flex justify-content-center">              
               <button className="btn btn-warning" onClick={handleClearCart}>Vaciar Carrito</button>
-              <button className="btn btn-success" onClick={handleFinalizeOrder}>Finalizar Compra</button>
+              <Link to="/checkout" className="btn btn-success">Finalizar Compra</Link>
               <Link to="/" className="btn btn-warning">Volver al Catálogo</Link>
             </div>
           </div>

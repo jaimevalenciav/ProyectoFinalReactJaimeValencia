@@ -1,0 +1,35 @@
+.comprobanteId{
+    font-size: xx-large;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.orderId{
+    display: inline-block;
+    justify-content: center;
+    max-width: 100%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.tituloCheckout{
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 10px;
+}
+
+.formulario{
+    display: inline-block;
+    justify-content: center;
+    min-width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.btn-volver{
+    padding-top: 10px;
+    max-width: 200px;    
+}

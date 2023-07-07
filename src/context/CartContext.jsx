@@ -22,10 +22,7 @@ export const CartProvider = ({children}) => {
         } else {
             console.error('El producto ya fue agregado')
         }        
-    } 
-
-   
-      
+    }       
 
     const removeItem = (itemId) => {
         const cartUpdated = cart.filter(prod => prod.id !== itemId)
@@ -44,8 +41,12 @@ export const CartProvider = ({children}) => {
         return cart.reduce((total, item) => total + item.quantity, 0)
     }
 
+    const totalPrice = () => {
+        return cart.reduce((total, item) => total + item.precio * item.quantity, 0)
+    }
+
     return (
-        <CartContext.Provider value={{  cart, addItem, totalQuantity, isInCart, removeItem, clearCart }}>
+        <CartContext.Provider value={{  cart, addItem, totalQuantity, totalPrice ,isInCart, removeItem, clearCart }}>
             {children}
         </CartContext.Provider>
     )
