@@ -1,4 +1,4 @@
-# E-commerce venta de vino On-line desarrollado con React
+# E-commerce venta de vinos On-line desarrollado con React
 
 Proyecto desarrollado como entrega de proyecto final para el curso de React-JS de Coderhouse. Aplicación desarrollada con el framework de React-JS y Bootstrap.
 
